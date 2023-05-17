@@ -1,6 +1,6 @@
 <?php
 require_once('db_connect.php');
-require('fpdf185/fpdf.php');
+require('fpdf.php');
 
 class PDF extends FPDF
 {

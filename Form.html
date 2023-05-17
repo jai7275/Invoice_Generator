@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Form</title>
+</head>
+<body>
+    <h1>Invoice Form</h1>
+    <form action="save_invoice.php" method="POST">
+        <label for="buyerName">Buyer Name:</label>
+        <input type="text" name="buyerName" id="buyerName" required><br><br>
+
+        <label for="products">Products:</label>
+        <textarea name="products" id="products" required></textarea><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" name="price" id="price" step="0.01" required><br><br>
+
+        <label for="total">Total:</label>
+        <input type="number" name="total" id="total" step="0.01" required><br><br>
+
+        <input type="submit" value="Save Invoice" onclick="downloadPdf()">
+    </form>
+</body>
+<script>
+    function downloadPdf() {
+        window.location.href = "invoice.html";
+    }
+</script>
+</html>
